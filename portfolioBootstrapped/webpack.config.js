@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -37,5 +38,17 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.json', '.jsx', '.css'],
+    modules: [
+           './node_modules',
+           './app'
+       ]
+  },
+  devServer: {
+    contentBase: './dist',
+    port: '3000',
+    inline: true,
   }
 };
