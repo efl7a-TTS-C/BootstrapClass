@@ -1,10 +1,22 @@
+// Color scheme #f6f6f8, #e3e3e3, (red) #c60021
 
-
-$body-bg: orange;
-$body-color: yellow;
+$body-bg: #f6f6f8;
+$body-color: #e3e3e3;
 
 $theme-colors: (
-    "primary": white,
-    "danger": black
+    "primary": #f6f6f8,
+    "danger": black,
+    "custom-color": #c60021
 );
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    max-width: 90%;
+    margin: 0 5%;
+}
+
+.navImg {
+    border-radius: 50%;
+}
